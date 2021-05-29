@@ -34,7 +34,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
   }
 
   function clearTimer(endTime) {
-    setTimer('00:00:10');
+    setTimer('00:10:00');
            if (intervalRef.current) clearInterval(intervalRef.current);
            const id = setInterval(()=>{
              startTimer(endTime);
@@ -107,7 +107,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
           thickness={1}
         />
       )}
-      <button onClick={onClickResetBtn}>Reset</button>
+      <button className='box'  onClick={onClickResetBtn}>Reset</button>
     </div>
   );
 };
