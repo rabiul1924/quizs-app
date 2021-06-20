@@ -107,7 +107,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
           thickness={1}
         />
       )}
-      <button className='box'  onClick={onClickResetBtn}>Reset</button>
+      
     </div>
   );
 };
