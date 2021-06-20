@@ -53,10 +53,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
     return () => {if (intervalRef.current) clearInterval(intervalRef.current)}
   },[]);
 
-  function onClickResetBtn(){
-    if (intervalRef.current) clearInterval(intervalRef.current)
-    return clearTimer(getDeadLineTime());
-  }
+ 
 
   useEffect(() => {
     setOptions(
